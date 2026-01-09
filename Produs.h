@@ -1,20 +1,23 @@
-#pragma once
+#ifndef PRODUS_H
+#define PRODUS_H
+
 #include <string>
 #include <iostream>
 
 class Produs {
-private:
+protected:
     std::string nume;
     double pret;
 
 public:
-    Produs();
     Produs(const std::string& nume, double pret);
+    virtual ~Produs();
 
-    std::string getNume() const;
-    double getPret() const;
-
-    void setPret(double pret);
+    virtual double calculeazaPretFinal() const = 0;
+    virtual void afisare(std::ostream& os) const;
 
     friend std::ostream& operator<<(std::ostream& os, const Produs& p);
 };
+
+#endif
+
