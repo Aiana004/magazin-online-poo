@@ -23,7 +23,7 @@ int main() {
     std::cout << comanda << "\n";
 
     // === Tema 2: Magazin + polimorfism ===
-    Magazin magazin;
+    Magazin& magazin = Magazin::getInstance();
     magazin.adaugaProdus(std::make_unique<ProdusElectronic>("Telefon", 2500, 12));
     magazin.adaugaProdus(std::make_unique<ProdusVestimentar>("Geaca", 400, "L"));
 
