@@ -7,6 +7,25 @@ Proiect POO – Magazin Online
 Magazin Online
 
 ### Descriere
-Proiectul își propune să modeleze funcționarea unui magazin online,
-permițând definirea mai multor tipuri de produse, gestionarea comenzilor
-și simularea procesului de cumpărare folosind C++ și concepte OOP.
+Proiectul modelează funcționarea unui magazin online folosind limbajul C++
+și concepte de programare orientată pe obiect.
+
+Aplicația permite:
+- definirea produselor
+- adăugarea produselor într-un magazin
+- afișarea produselor disponibile
+
+Această versiune reprezintă baza proiectului, urmând ca funcționalități
+suplimentare să fie adăugate ulterior.
+
+### Structura proiectului
+- `Produs.h / Produs.cpp` – clasa Produs
+- `Magazin.h / Magazin.cpp` – gestionarea produselor
+- `main.cpp` – rularea aplicației
+
+### Concepte OOP utilizate
+- clase și obiecte
+- încapsulare
+- constructori
+- compoziție
+- separarea interfeței de implementare
