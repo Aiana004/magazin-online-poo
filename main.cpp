@@ -1,16 +1,21 @@
 #include <iostream>
+#include <memory>
 #include "Magazin.h"
+#include "ProdusAlimentar.h"
+#include "ProdusVestimentar.h"
+#include "ProdusElectronic.h"
 
 int main() {
     Magazin magazin;
 
-    Produs p1("Laptop", 3500);
-    Produs p2("Telefon", 2500);
-    Produs p3("Casti", 300);
+    magazin.adaugaProdus(
+        std::make_unique<ProdusElectronic>("Laptop", 3500, 24));
 
-    magazin.adaugaProdus(p1);
-    magazin.adaugaProdus(p2);
-    magazin.adaugaProdus(p3);
+    magazin.adaugaProdus(
+        std::make_unique<ProdusVestimentar>("Tricou", 80, "M"));
+
+    magazin.adaugaProdus(
+        std::make_unique<ProdusAlimentar>("Paine", 5, "01.02.2026"));
 
     std::cout << "Produse disponibile in magazin:\n";
     magazin.afiseazaProduse();
