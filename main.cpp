@@ -5,6 +5,7 @@
 #include "Client.h"
 #include "Comanda.h"
 #include "Magazin.h"
+#include "ProdusFactory.h"
 
 int main() {
     // === Tema 1: Client + Comanda + CosCumparaturi ===
@@ -24,7 +25,8 @@ int main() {
 
     // === Tema 2: Magazin + polimorfism ===
     Magazin& magazin = Magazin::getInstance();
-    magazin.adaugaProdus(std::make_unique<ProdusElectronic>("Telefon", 2500, 12));
+    magazin.adaugaProdus(
+        ProdusFactory::creeazaProdus("electronic", "Telefon", 2500, "12"));
     magazin.adaugaProdus(std::make_unique<ProdusVestimentar>("Geaca", 400, "L"));
 
     std::cout << "\n=== Produse in magazin ===\n";
