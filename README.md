@@ -52,7 +52,7 @@ Afișarea și calculul prețului final se realizează prin metode virtuale.
 
 ## Tema 2
 
-### Concepte utilizate
+### Concepte OOP utilizate
 - Polimorfism avansat
 - Gestionarea memoriei cu smart pointers (`std::unique_ptr`)
 - Vector de pointeri la clasa de bază
@@ -65,7 +65,7 @@ derivate din clasa de bază `Produs`.
 
 ## Tema 3
 
-### Concepte utilizate
+### Concepte OOP utilizate
 - Design Pattern: Singleton
 - Clase șablon (template)
 - Funcții șablon (template)
@@ -77,8 +77,10 @@ pentru gestionarea instanței magazinului. De asemenea, sunt utilizate clase
 
 
 ## Rulare
-Aplicația este demonstrată în fișierul `main.cpp`, unde sunt create obiecte
-de tip produse și sunt apelate metodele clasei `Magazin`.
 
+Programul creează un magazin online, adaugă produse
+electronice, alimentare și vestimentare, le afișează
+și demonstrează utilizarea polimorfismului și a
+design pattern-urilor implementate.
 
 
