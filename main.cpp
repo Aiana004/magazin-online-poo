@@ -7,6 +7,7 @@
 #include "Magazin.h"
 #include "ProdusFactory.h"
 #include "ContainerGeneric.h"
+#include "Utils.h"
 
 
 int main() {
@@ -42,6 +43,9 @@ int main() {
     ContainerGeneric<std::string> mesaje;
     mesaje.adauga("Salut");
     mesaje.adauga("POO");
+    // === Template function ===
+    std::cout << "Max int: " << maxim(3, 7) << std::endl;
+    std::cout << "Max double: " << maxim(4.5, 2.1) << std::endl;
 
 
     return 0;
