@@ -6,6 +6,8 @@
 #include "Comanda.h"
 #include "Magazin.h"
 #include "ProdusFactory.h"
+#include "ContainerGeneric.h"
+
 
 int main() {
     // === Tema 1: Client + Comanda + CosCumparaturi ===
@@ -31,6 +33,16 @@ int main() {
 
     std::cout << "\n=== Produse in magazin ===\n";
     magazin.afiseazaProduse();
+
+    // === Template class ===
+    ContainerGeneric<int> numere;
+    numere.adauga(10);
+    numere.adauga(20);
+
+    ContainerGeneric<std::string> mesaje;
+    mesaje.adauga("Salut");
+    mesaje.adauga("POO");
+
 
     return 0;
 }
