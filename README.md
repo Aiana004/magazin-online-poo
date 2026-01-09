@@ -50,3 +50,35 @@ suplimentare să fie adăugate ulterior.
 Magazinul gestionează produse de tipuri diferite folosind polimorfism.
 Afișarea și calculul prețului final se realizează prin metode virtuale.
 
+## Tema 2
+
+### Concepte utilizate
+- Polimorfism avansat
+- Gestionarea memoriei cu smart pointers (`std::unique_ptr`)
+- Vector de pointeri la clasa de bază
+- Separarea clară între interfață și implementare
+
+### Descriere
+Aplicația permite gestionarea colecției de produse prin intermediul
+clasei `Magazin`, folosind pointeri polimorfici pentru stocarea obiectelor
+derivate din clasa de bază `Produs`.
+
+## Tema 3
+
+### Concepte utilizate
+- Design Pattern: Singleton
+- Clase șablon (template)
+- Funcții șablon (template)
+
+### Descriere
+Proiectul a fost extins prin utilizarea unui design pattern de tip Singleton
+pentru gestionarea instanței magazinului. De asemenea, sunt utilizate clase
+șablon și funcții șablon pentru a demonstra programarea generică în C++.
+
+
+## Rulare
+Aplicația este demonstrată în fișierul `main.cpp`, unde sunt create obiecte
+de tip produse și sunt apelate metodele clasei `Magazin`.
+
+
+
