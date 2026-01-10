@@ -84,3 +84,4 @@ electronice, alimentare și vestimentare, le afișează
 design pattern-urilor implementate.
 
 
+
